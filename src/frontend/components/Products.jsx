@@ -4,7 +4,8 @@ import { addToCart, updateProductsList } from '../actions';
 import usePlatziProducts from '../hooks/usePlatziProducts';
 import '../styles/components/Products.styl';
 
-const API_URL = 'https://nemo1co-reto09.now.sh/api/products/';
+// const API_URL = 'https://nemo1co-reto09.now.sh/api/products/';
+const API_URL = 'https://rickandmortyapi.com/api/character/';
 
 const Products = (props) => {
   const { products } = props;

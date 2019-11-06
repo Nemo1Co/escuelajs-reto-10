@@ -13,8 +13,19 @@ const newState = [
 const usePlatziProducts = (API, preloadedProducts) => {
   const [baseProducts, setProducts] = useState(preloadedProducts);
 
+  const init = {
+    method: 'GET',
+    headers: {
+      Accept: '*/*',
+    },
+    mode: 'cors',
+  };
+
   useEffect(() => {
     setProducts(newState);
+    fetch(API, init)
+      .then((response) => console.info(response))
+      .catch((error) => console.error(error));
   }, []);
 
   return baseProducts;
