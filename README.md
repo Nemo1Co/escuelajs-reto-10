@@ -33,7 +33,8 @@ npm run start
 ### Segundo Problema
 
 1. Conectar tu API del reto pasado con el actual servidor.
-
+   - [Url especifica de la API del reto 09](https://nemo1co-reto09.now.sh/api/products/)
+   - No olvidar que el servidor backend debe contar con `CORS`.
 
 ### Enviar solución de reto
 
